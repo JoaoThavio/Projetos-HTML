@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-primaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+.cad_produtos{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+
+.cad_produtos_formmulario{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: white;
+    font-family: var(--font-primaria);
+    border: 10px solid rgb(181, 184, 35);
+    border-radius: 20px 0 20px 0;
+    padding: 90px;
+    margin-top: 20px;
+    
+}
+    
+.cad_produtos_formmulario h2{
+    margin-bottom: 20px;
+}
+
+.cad_produtos_formmulario input[type="text"]{
+    margin-bottom: 25px;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 5px 10px;
+}
+
+.cad_produtos_formmulario label{
+    font-weight: 600;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+
+.cad_produtos_formmulario input[type="text"]:hover{
+    background-color: rgb(208, 255, 196);
+}
+
+.cad_produtos_formmulario input[type="text"]:focus{
+    background-color: rgb(208, 255, 196);
+}
+
+.cad_produtos_enviar{
+    font-size: 20px;
+    background-color: rgb(208, 255, 196);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border-radius: 0.5px solid #0ba810;
+    cursor: pointer;
+}
+
+.cad_produtos_enviar:hover{
+   background-color: #087ba9; 
+   color: #0ba810;
+}
+/*
+body{
+    background-color: burlywood;
+    min-height: 100vh;
+    display: flex;
+    justify-content: cen;
+}
+
+
+.gremio{
+    background-color: white;
+    font-size: 20px;
+    padding: 40px;
+    border-radius: 15px;
+}
+*/
+
+/* Pagina de Consulta*/
+
+.consulta_produtos{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    margin-top: 30px;
+    font-family: var(--font-primaria);
+}
+
+.consulta_produtos table{
+    border: 0.5px solid black;
+    background-color: black;
+}
+
+.consulta_produtos th{
+    padding: 10px 20px;
+    background-color: #ffe4c4;
+}
+
+.consulta_produtos td{
+    background-color: white;
+    padding: 10px 10px;
+}
+
+nav {
+    padding: 0;
+    position: relative; /* Adicionando posição relativa ao nav */
+}
+
+nav li {
+    display: inline-block;
+    position: relative; /* Adicionando posição relativa ao li */
+}
+
+nav li a {
+    display: inline-block;
+    color: #49ef02;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+}
+
+nav li a:hover {
+    filter: drop-shadow(2px 2px 20px white);
+}
+    
+.dropdown-menu {
+    background-color: rgba(255, 228, 196, 0.579);
+    font-family: var(--font-primaria);
+    
+    display: none;
+    padding: 10px;
+    position: absolute; /* Mudando para posição absoluta */
+    margin-left: -5px; /* Ajustando a margem */
+    margin-bottom: -200;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Mostrando o menu ao passar o mouse */
+}
+
+.dropdown {
+    z-index: 2; /* Garantindo que o dropdown fique acima dos outros elementos */
+}
+
+.dropdown img {
+    width: 60px;
+    height: 60px;
+}

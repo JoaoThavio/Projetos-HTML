@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">
+                        <img src="/static/assets/menu.png" alt="">
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="/"><strong>Lançar Notas</strong></a>
+                        <br>
+                        <a href="consulta2"><strong>Ver Notas</strong></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    
+
+    </div>
+
+    <div class="cad_produtos">
+
+        <form action="/index.html" method="post" class="cad_produtos_formmulario">
+                <h2>Lançar Notas</h2>
+                <label for="">Nome do aluno:</label>
+                <input type="text" name="nome_aluno" id="nome_aluno" required>
+
+                <label for="">Turma:</label>
+                <input type="text" name="turma_aluno" id="turma_aluno" required>
+                
+                <label for="">Nota 1:</label>
+                <input type="text" name="nota1_aluno" id="nota1_aluno" required>
+                
+                <label for="">Nota 2:</label>
+                <input type="text" name="nota2_aluno" id="nota2_aluno" required>
+
+                <label for="">Nota 3:</label>
+                <input type="text" name="nota3_aluno" id="nota3_aluno" required>
+                
+
+            <div>
+                <button type="submit" class="cad_produtos_enviar">Lançar</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

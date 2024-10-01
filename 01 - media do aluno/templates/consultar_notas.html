@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediia</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <img src="/static/assets/" alt="">
+
+            <ul>
+                <li class="dropdown">
+                    <a href="#">
+                        <img src="/static/assets/menu.png" alt="">
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="/"><strong>Lançar Notas</strong></a>
+                        <br>
+                        <a href="consulta2"><strong>Ver Notas</strong></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="consulta_produtos">
+        <h2>Consultar Notas</h2>
+        <table>
+            <tr>
+              <th>Nome do aluno</th>
+              <th>Turma do Aluno</th>
+              <th>Nota 1</th> 
+              <th>Nota 2</th> 
+              <th>Nota 3</th>
+              <th>Média</th>  
+              <th>Status</th>  
+              <th>Deletar</th> 
+            </tr>
+            {% for pro in prod %}
+            <tr>
+                <td>{{ pro.nome }}</td>
+                <td>{{ pro.turma }}</td>  
+                <td>{{ pro.nota1 }}</td>
+                <td>{{ pro.nota2 }}</td>
+                <td>{{ pro.nota3 }}</td>
+                <td>{{ pro.media }}</td>
+                <td>{{ pro.status }}</td>
+
+                <td>
+                    <a href="/excluir_notas?linha={{ loop.index0 }}" class="link_notas">Clique Aqui</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
