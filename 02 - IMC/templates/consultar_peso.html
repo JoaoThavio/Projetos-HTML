@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="botao-voltar">Voltar</a>
+    </nav>
+
+    <div class="consulta_produtos">
+        <h2>Consultar IMC</h2>
+        <table>
+            <tr>
+              <th>Nome:</th>
+              <th>Peso</th> 
+              <th>Altura</th> 
+              <th>Média</th>  
+              <th>Status</th>  
+              <th>Deletar</th> 
+            </tr>
+            {% for pro in prod %}
+            <tr>
+                <td>{{ pro.nome }}</td> 
+                <td>{{ pro.peso }}</td>
+                <td>{{ pro.altura }}</td>
+                <td>{{ pro.media }}</td>
+                <td>{{ pro.status }}</td>
+
+                <td>
+                    <a href="/excluir_notas?linha={{ loop.index0 }}" class="link_notas">Clique Aqui</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

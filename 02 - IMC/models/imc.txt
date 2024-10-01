@@ -1,0 +1,4 @@
+José Carlos;68.0;1.76;21.952479338842977;Peso Normal
+João Othavio;54.0;1.73;18.042701059173375;Abaixo do Peso
+José Carlos;63.0;1.76;20.33832644628099;Peso Normal
+Mateus;20.0;1.9;5.54016620498615;Abaixo do Peso

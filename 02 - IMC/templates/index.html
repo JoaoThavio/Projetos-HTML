@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">
+                        <img src="/static/assets/menu.png" alt="">
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="consulta2"><strong>Ver IMC</strong></a>
+                        <br>
+                        <a href="/tabela"><strong>Informações</strong></a>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    
+
+    </div>
+
+    <div class="cad_produtos">
+
+        <form action="/validar_imc" method="post" class="cad_produtos_formmulario">
+                <h2>Calcular IMC</h2>
+                <label for="">Nome:</label>
+                <input type="text" name="nome_aluno" id="nome_aluno" required>
+
+                <div>
+                <label for="">Peso(kg)</label>
+                <input type="text" name="peso_pessoa" id="peso_pessoa" required>
+                
+                <label for="">Altura:</label>
+                <input type="text" name="altura_pessoa" id="altura_pessoa" required>
+                </div>
+            <div>
+                <button type="submit" class="cad_produtos_enviar">Lançar</button>
+                <button type="button" class="limpar" onclick="limparCampos()">Limpar</button>
+            </div>
+            
+        </form>
+    </div>
+
+
+    <script>
+        function limparCampos() {
+            document.getElementById("nome_aluno").value = "";
+            document.getElementById("peso_pessoa").value = "";
+            document.getElementById("altura_pessoa").value = "";
+        }
+    </script>
+</body>
+</html>
