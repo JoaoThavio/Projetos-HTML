@@ -5,7 +5,7 @@ O objetivo é exercitar conceitos de estruturação de conteúdo e criação de 
 
 ## Tecnologias Utilizadas
 - **HTML5** → Estrutura e marcação das páginas  
-- **CSS3** *(quando aplicado)* → Estilização e layout das páginas  
+- **CSS3** → Estilização e layout das páginas  
 - **JavaScript** *(quando aplicado)* → Interatividade básica  
 
 ## Objetivos
